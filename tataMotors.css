@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+}
+/* navgitation bar */
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg,black,transparent);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    padding: 55px ;
+}
+header ul{
+    column-gap: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+header ul li{
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+header ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: aliceblue;
+
+}
+header img{
+    width: 140px;
+}
+.carousel-item{
+    object-fit: cover;
+}
+.text{
+    width: 550px;
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    z-index: 100;
+    color: aliceblue;
+    animation: drag 1s ease-in-out forwards;
+    opacity: 0;
+    font-size: 70px;
+}
+span{
+    font-size: 70px;
+}
+a{
+    color: aliceblue;
+    font-size: 1.6rem;
+}
+@keyframes drag{
+    to{
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+}
+.text a{
+    color: aliceblue;
+    position: absolute;
+}
+.carousel-item img{
+    height: 800px;
+}
